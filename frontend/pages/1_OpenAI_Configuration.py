@@ -1,4 +1,5 @@
 import os
+from util.config import OpenAIConfig
 import streamlit as st
 try:
     import pandas as pd
