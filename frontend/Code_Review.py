@@ -6,9 +6,9 @@ from io import StringIO
 import time
 import base64
 from dotenv import load_dotenv
+st.set_page_config(page_title="Code reviewer", layout="centered", initial_sidebar_state="collapsed", menu_items=None)
 
 st.session_state.update(st.session_state)
-st.set_page_config(page_title="Code reviewer", layout="centered", initial_sidebar_state="collapsed", menu_items=None)
 
 if 'openai_config' not in st.session_state:
     st.error('OpenAI Key not entered. Please key in your OpenAI key in OpenAI configuration page.')
