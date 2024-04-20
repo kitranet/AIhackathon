@@ -6,6 +6,7 @@ try:
     from util.config import OpenAIConfig
 except Exception as e:
     st.error(f"Import error:{e}")
+st.set_page_config(page_title="Open AI", layout="centered", initial_sidebar_state="collapsed", menu_items=None)
 st.session_state.update(st.session_state)
 
 try:
